@@ -1,0 +1,14 @@
+/* dark mode toggle styling */
+
+label .toggle-dot {
+  transform: translateX(0%);
+  transition: transform 0.3s;
+}
+
+#checkbox:checked + label .toggle-dot {
+  transform: translateX(80%);
+}
+/* Remove default background color */
+input[type="checkbox"]:checked + label {
+  background-color: transparent;
+}
